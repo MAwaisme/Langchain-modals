@@ -1,0 +1,322 @@
+# =========================================================
+# Dependencies
+# =========================================================
+
+# Node
+node_modules/
+.pnp/
+.pnp.*
+.yarn/*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Python virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Python packaging
+*.egg-info/
+.eggs/
+dist/
+build/
+pip-wheel-metadata/
+wheels/
+MANIFEST
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+
+# =========================================================
+# Environment & Secrets
+# =========================================================
+
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Secrets / credentials
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+credentials.json
+service-account.json
+secrets.json
+secrets.yaml
+secrets.yml
+
+# Cloud / AI credentials
+.aws/
+.gcloud/
+.azure/
+.config/gcloud/
+
+
+# =========================================================
+# Next.js
+# =========================================================
+
+.next/
+out/
+
+# Production
+/build/
+
+
+# =========================================================
+# Vercel
+# =========================================================
+
+.vercel/
+
+
+# =========================================================
+# TypeScript
+# =========================================================
+
+*.tsbuildinfo
+next-env.d.ts
+
+
+# =========================================================
+# AI / ML Models & Caches
+# =========================================================
+
+# Hugging Face
+.cache/
+.huggingface/
+huggingface/
+transformers_cache/
+models/
+
+# Common ML caches
+.ml_cache/
+model_cache/
+
+# Large model files
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+*.gguf
+*.ggml
+
+
+# =========================================================
+# Agentic AI Runtime / State
+# =========================================================
+
+# Agent state
+.agent/
+.agents/
+agent_state/
+agent_states/
+agent_memory/
+agent_logs/
+
+# LangChain / LangGraph local state
+.langchain/
+.langgraph/
+langgraph.db
+langgraph.sqlite
+langgraph.sqlite3
+
+# Local checkpoints
+checkpoints/
+checkpoints.db
+*.checkpoint
+
+
+# =========================================================
+# Vector Databases / Embeddings
+# =========================================================
+
+# Chroma
+chroma/
+.chroma/
+
+# FAISS
+faiss_index/
+*.faiss
+
+# Local vector stores
+vectorstore/
+vectorstores/
+vector_db/
+vectordb/
+
+# LanceDB
+.lancedb/
+
+# Qdrant local storage
+qdrant_storage/
+
+# SQLite databases
+*.sqlite
+*.sqlite3
+*.db
+
+
+# =========================================================
+# RAG / Document Processing
+# =========================================================
+
+# Generated embeddings
+embeddings/
+embedding_cache/
+
+# Processed documents
+processed_documents/
+document_cache/
+
+# Temporary uploads
+uploads/
+tmp/
+temp/
+
+
+# =========================================================
+# Jupyter / Notebooks
+# =========================================================
+
+.ipynb_checkpoints/
+
+# Jupyter runtime
+.jupyter/
+
+
+# =========================================================
+# Testing
+# =========================================================
+
+coverage/
+.pytest_cache/
+.nox/
+.tox/
+
+
+# =========================================================
+# Logs & Debug
+# =========================================================
+
+*.log
+logs/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+.next-dev.log
+
+
+# =========================================================
+# OS
+# =========================================================
+
+.DS_Store
+Thumbs.db
+
+# macOS
+.AppleDouble
+.LSOverride
+
+# Windows
+ehthumbs.db
+Desktop.ini
+
+
+# =========================================================
+# IDE / Editors
+# =========================================================
+
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+
+# =========================================================
+# Temporary / Generated Files
+# =========================================================
+
+*.tmp
+*.temp
+*.bak
+*.backup
+
+*.pid
+*.seed
+
+.cache/
+.cache-loader/
+
+
+# =========================================================
+# Docker
+# =========================================================
+
+docker-compose.override.yml
+
+
+# =========================================================
+# OS / CLI History
+# =========================================================
+
+.python_history
+.python_history.txt
+.zsh_history
+
+
+# =========================================================
+# Local Development
+# =========================================================
+
+.local/
+.local-data/
+runtime/
+runtime-data/
+storage/
+data/
+
+
+# =========================================================
+# Generated Reports / Outputs
+# =========================================================
+
+outputs/
+generated/
+generated_files/
+artifacts/
+
+
+# =========================================================
+# Optional: Local AI tools
+# =========================================================
+
+# Ollama
+.ollama/
+
+# OpenAI / Anthropic / other local config
+.openai/
+.anthropic/
