@@ -22,6 +22,7 @@
 import os
 
 from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
+from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -35,7 +36,18 @@ llm = HuggingFaceEndpoint(
 )
 
 model = ChatHuggingFace(llm=llm)
+chat_history = [
+    SystemMessage(content="You are a helpful assistant."),
+]
+# result = model.invoke("Who created the first LLM model?")
+while True:
+    user_input = input("User: ")
+    chat_history.append(HumanMessage(content=user_input))
+    # if user_input.lower() in ["exit", "quit"]:
+    if user_input == 'exit':
+        break
+    result = model.invoke(chat_history)
+    chat_history.append(AIMessage(content=result.content))
+    print("AI:", result.content)
 
-result = model.invoke("Who created the first LLM model?")
-
-print(result.content)
+print(chat_history)
